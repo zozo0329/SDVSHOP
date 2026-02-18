@@ -1,6 +1,16 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes:
+    light --default,
+    dark --prefersdark;
+}
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #1a1a1a;
+  color: lime;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

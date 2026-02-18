@@ -1,0 +1,8 @@
+.default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  background: url("https://64.media.tumblr.com/20809195c0b972d2cda188a527eaf18c/a4652a3f58049005-85/s540x810/6bfd5f7a6e83bad62f6f6812fa029831c4515052.gif")
+    center / cover no-repeat;
+}

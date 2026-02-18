@@ -1,5 +1,14 @@
 import React from "react";
+import MainHeader from "./Components/HeaderContent/MainHeader/MainHeader";
+import Main from "./Components/MainContent/Main/Main";
 
-export const App = () => {
-  return <div>App</div>;
+const App = () => {
+  return (
+    <div>
+      <MainHeader />
+      <Main />
+    </div>
+  );
 };
+
+export default App;
