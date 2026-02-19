@@ -12,3 +12,9 @@
     height: 370px;
   }
 }
+
+@media (max-width: 950px) {
+  .store {
+    font-size: 60px;
+  }
+}

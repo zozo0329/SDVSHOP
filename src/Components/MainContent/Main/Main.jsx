@@ -8,8 +8,10 @@ const Main = () => {
       <div className={mainStyle.default}>
         <Title />
       </div>
-      <div className="flex flex-col justify-center items-center p-10px">
-        <h1 className="text-8xl m-20 cursor-default">STORE</h1>
+      <div className="flex flex-col justify-center items-center p-10px bg-black">
+        <h1 className={`text-8xl mt-20 cursor-default ${mainStyle.store}`}>
+          STORE
+        </h1>
         <CategoryList />
       </div>
     </div>
