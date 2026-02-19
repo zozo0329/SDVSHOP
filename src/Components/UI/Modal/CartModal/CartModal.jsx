@@ -1,21 +1,20 @@
 import React from "react";
 import Navbar from "../../../HeaderContent/Nav/Navbar";
 
-const CartModal = () => {
+const CartModal = ({ children, content, className }) => {
   return (
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
-      <Navbar />
-      {/* <button
-        className="btn"
+      <button
+        className={`btn  ${className}`}
         onClick={() => document.getElementById("my_modal_2").showModal()}
       >
-        open modal
-      </button> */}
+        {children}
+      </button>
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">Press ESC key or click outside to close</p>
+          {content}
+          <h1>TEST</h1>
         </div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>

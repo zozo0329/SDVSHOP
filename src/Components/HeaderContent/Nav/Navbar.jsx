@@ -1,16 +1,14 @@
 import React from "react";
 
 import CartIcon from "../../../assets/Images/cart.png";
+import CartModal from "../../UI/Modal/CartModal/CartModal";
 const Navbar = () => {
   return (
     <>
-      <button
-        className="btn p-3 flex items-center justify-center border-[lime]"
-        onClick={() => document.getElementById("my_modal_2").showModal()}
-      >
+      <CartModal className="flex items-center justify-center gap-2 bg-black border-[lime] hover:bg-[#1f1f1f] transition-all duration-300">
         <img src={CartIcon} alt="Cart" className="h-8" />
         <span className="text-xl text-[#6fff6f]">69</span>
-      </button>
+      </CartModal>
     </>
   );
 };
