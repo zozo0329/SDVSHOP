@@ -12,10 +12,7 @@ const CartModal = ({ children, content, className }) => {
         {children}
       </button>
       <dialog id="my_modal_2" className="modal">
-        <div className="modal-box">
-          {content}
-          <h1>TEST</h1>
-        </div>
+        <div className="modal-box">{content}</div>
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>
