@@ -1,0 +1,12 @@
+@media (max-width: 850px) {
+  .buttonStyle {
+    padding: 8px;
+    width: auto;
+  }
+  .pic {
+    height: 23px;
+  }
+  span {
+    font-size: 18px;
+  }
+}
