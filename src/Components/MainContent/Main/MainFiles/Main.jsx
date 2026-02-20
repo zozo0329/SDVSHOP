@@ -1,7 +1,8 @@
 import React from "react";
 import mainStyle from "./Main.module.css";
-import Title from "../Title/Title";
-import CategoryList from "./Category/CategoryList";
+import Title from "../../Title/Title";
+import CategoryList from "../Category/CategoryList";
+import CategoryItemList from "../CategoryItemList/CategoryItemList";
 const Main = () => {
   return (
     <div>

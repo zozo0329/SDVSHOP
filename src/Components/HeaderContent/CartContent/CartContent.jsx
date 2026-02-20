@@ -1,5 +1,5 @@
 import React from "react";
-import CartModal from "../../UI/Modal/CartModal/CartModal";
+// import CartModal from "../../UI/Modal/CartModal/CartModal";
 
 const CartContent = () => {
   return (

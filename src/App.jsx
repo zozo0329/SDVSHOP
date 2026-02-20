@@ -1,6 +1,6 @@
 import React from "react";
 import MainHeader from "./Components/HeaderContent/MainHeader/MainHeader";
-import Main from "./Components/MainContent/Main/Main";
+import Main from "./Components/MainContent/Main/MainFiles/Main";
 
 const App = () => {
   return (
