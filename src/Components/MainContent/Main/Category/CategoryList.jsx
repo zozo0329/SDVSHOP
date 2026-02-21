@@ -11,6 +11,7 @@ const CategoryList = () => {
         return (
           <CartModal
             className={`border-[lime] border-[5px] rounded-[20px] h-50 w-50 cursor-pointer hover:scale-[1.1] transition-all duration-250 ${CategoryListStle.modal}`}
+            key={categoryItem.id}
             content={
               <>
                 <Crops content={categoryItem.content} />
