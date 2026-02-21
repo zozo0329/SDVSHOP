@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderLogo from "../Logo/HeaderLogo";
-import CartModal from "../../UI/Modal/CartModal/CartModal";
 import Navbar from "../Nav/Navbar";
 const MainHeader = () => {
   return (
