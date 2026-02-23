@@ -1,6 +1,6 @@
 import React from "react";
-
-const Cart = ({ item, cartCtx }) => {
+import CartStyle from "./Cart.module.css";
+const Cart = ({ item, cartCtx, className }) => {
   const plusHandler = () => {
     cartCtx.addItem({ ...item, quantity: 1 });
   };
@@ -9,9 +9,13 @@ const Cart = ({ item, cartCtx }) => {
     cartCtx.removeItem(item.id);
   };
   return (
-    <div className="bg-black flex justify-between items-center gap-10 p-7.5 rounded-[20px]">
-      <div className="flex items-center gap-5">
-        <img src={item.image} alt={item.name} />
+    <div className={className}>
+      <div className="flex items-center justify-center gap-5">
+        <img
+          src={item.image}
+          alt={item.name}
+          className={CartStyle.imageStyle}
+        />
         <p className="text-2xl">{item.name}</p>
         <p className="text-2xl">
           <span className="text-[yellow]">G</span>

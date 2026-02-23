@@ -1,0 +1,11 @@
+.imageStyle {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 849px) {
+  .imageStyle {
+    width: 35px;
+    height: 35px;
+  }
+}

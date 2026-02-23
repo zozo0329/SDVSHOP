@@ -4,15 +4,17 @@ import CartContext from "../../../Store/CartContext";
 import Cart from "./Cart";
 const CartContent = () => {
   const cartCtx = useContext(CartContext);
-  // const plusHandler = (item) => {
-  //   cartCtx.addItem({ ...item, amount: 1 });
-  // };
+
   console.log(cartCtx, "CARTCTX");
   const items = cartCtx.items;
   return (
     <>
       {items.map((item) => (
-        <Cart item={item} cartCtx={cartCtx} />
+        <Cart
+          item={item}
+          cartCtx={cartCtx}
+          className={`bg-black flex justify-between items-center gap-5 p-7.5 rounded-[20px] w-full`}
+        />
       ))}
     </>
   );
