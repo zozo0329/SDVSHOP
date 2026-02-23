@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../../../HeaderContent/Nav/Navbar";
 
-const CartModal = ({ children, content, className, id }) => {
+const CartModal = ({ children, content, className, id, disabled }) => {
   return (
     <div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
       <button
+        disabled={disabled}
         className={`btn  ${className}`}
         onClick={() => document.getElementById(id).showModal()}
       >

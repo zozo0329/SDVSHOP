@@ -9,7 +9,9 @@ const Main = () => {
       <div className={mainStyle.default}>
         <Title />
       </div>
-      <div className="flex flex-col justify-center items-center p-10px bg-black">
+      <div
+        className={`flex flex-col justify-center items-center m-30 bg-[black] rounded-2xl ${mainStyle.mainContent}`}
+      >
         <h1 className={`text-8xl mt-20 cursor-default ${mainStyle.store}`}>
           STORE
         </h1>

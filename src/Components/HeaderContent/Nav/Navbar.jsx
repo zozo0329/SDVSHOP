@@ -8,16 +8,13 @@ import CartContext from "../../../Store/CartContext";
 const Navbar = () => {
   const cartCtx = useContext(CartContext);
   console.log(cartCtx, "ITEMSSSSssssssssssss");
-
-  // const numberOfCartItems = cartCtx.items.reduce((totalItem, num) => {
-  //   console.log(cartCtx.items, "TOTAL ITEM");
-  //   return totalItem + num.quantity;
-  // }, 0);
+  const isCartEmpty = cartCtx.items.length === 0;
 
   return (
     <>
       <CartModal
-        className={`flex items-center justify-center gap-2 bg-black border-[lime] hover:bg-[#1f1f1f] transition-all duration-300 hover:scale-[1.1] ${navStyle.buttonStyle}`}
+        disabled={isCartEmpty}
+        className={`flex items-center justify-center gap-2 bg-black border-[lime] hover:bg-[#1f1f1f] transition-all duration-300 hover:scale-[1.1] ${navStyle.buttonStyle} ${isCartEmpty ? "cursor-not-allowed hover:scale-100 hover:bg-black" : "cursor-pointer"}`}
         content={
           <>
             <div className="flex flex-col justify-center items-center gap-10">

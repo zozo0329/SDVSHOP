@@ -1,0 +1,10 @@
+@media (max-width: 850px) {
+  .CardModall {
+    width: 40%;
+    height: 300px;
+    border: 3px solid lime;
+  }
+  .cropss {
+    display: none;
+  }
+}

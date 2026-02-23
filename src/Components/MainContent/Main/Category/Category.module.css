@@ -10,3 +10,16 @@
     width: 150px;
   }
 }
+
+@media (max-width: 500px) {
+  .image {
+    height: 25px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .modal {
+    height: 85px;
+    width: 85px;
+  }
+}

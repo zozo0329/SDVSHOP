@@ -1,12 +1,18 @@
 import React from "react";
-
-const CardItem = ({ itemImage, children, cardTitle, cardAmount }) => {
+import cropsStyle from "../../MainContent/Main/CategoryItemList/Crops.module.css";
+const CardItem = ({
+  itemImage,
+  children,
+  cardTitle,
+  cardAmount,
+  className,
+}) => {
   return (
-    <div className="card w-[40%] flex flex-col justify-center items-center bg-[#000000] gap-3 p-5">
-      <figure className="">{itemImage}</figure>
-      <div className="card-body  flex flex-wrap flex-col justify-center items-center gap-3">
+    <div className={` ${className}`}>
+      <figure className={cropsStyle.cropss}>{itemImage}</figure>
+      <div className="card-body  flex flex-wrap flex-col justify-center items-center">
         <h2 className="card-title text-center">{cardTitle}</h2>
-        <p className="text-lg">
+        <p className="text-lg m-0 p-0">
           <span className="text-[yellow]">G</span>
           {cardAmount}
         </p>

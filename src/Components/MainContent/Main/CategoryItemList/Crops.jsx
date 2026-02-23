@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import CardItem from "../../../UI/Card/CardItem";
 import CartContext from "../../../../Store/CartContext";
+import CropsStyle from "./Crops.module.css";
 
 const Crops = ({ content }) => {
   const cartCtx = useContext(CartContext);
@@ -16,11 +17,12 @@ const Crops = ({ content }) => {
       {content.map((item) => {
         return (
           <CardItem
+            className={`card w-[45%] h-90 flex flex-col justify-center items-center bg-[#000000] p-10 ${CropsStyle.CardModall}`}
             key={item.id}
             cardTitle={item.name}
             cardAmount={item.amount}
             itemImage={
-              <img src={item.image} alt={item.name} className="h-13 w-13" />
+              <img src={item.image} alt={item.name} className="w-13 h-13" />
             }
           >
             <button

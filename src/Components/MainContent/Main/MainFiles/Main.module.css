@@ -18,3 +18,9 @@
     font-size: 60px;
   }
 }
+
+@media (max-width: 650px) {
+  .mainContent {
+    margin: 0;
+  }
+}
