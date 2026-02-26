@@ -1,0 +1,17 @@
+nav {
+  font-size: 18px;
+}
+a {
+  cursor: pointer;
+}
+h6 {
+  cursor: default;
+}
+
+@media (max-width: 850px) {
+  .logoStyle {
+    height: 60px;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+}
